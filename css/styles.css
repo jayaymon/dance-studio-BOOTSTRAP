@@ -1,52 +1,101 @@
+/* TABLE OF CONTENTS
+
+1. global/general styles
+
+2. typography
+
+3. layout
+
+4. components
+
+*/
+
+
+/* =====================
+   global/general styles
+   ===================== */
+
 body {
+    background-image: url(/img/floor-tile.png);
     font-family: "Open Sans", sans-serif;
 }
 
+/* =====================
+   typography
+   ===================== */
+
 h1, h2, h3 {
     font-family: "Fredoka One", cursive;
+    margin: 1rem;
 }
 
-h2 {
-    color: #3046C5;
+h5 {
+    color: #ffffff;
+    margin-top: 1rem;
+    text-decoration: underline
+}
+
+a {
+    color: #22910c
+}
+
+/* =====================
+   layout
+   ===================== */
+
+header h2 {
+    color: #CEC8FF;
+}
+
+hr {
+    border-top: 2px ridge
 }
 
 table {
     text-align: center;
 }
 
-header h2 {
-    color: #CEC8FF;
-}
-
 .site-footer {
     background-image: linear-gradient(#bbb012ce, #910c0c);
-    padding: 20px 0;
+    padding: 2rem;
 }
+
+/* =====================
+   components
+   ===================== */
 
 .jumbotron {
-    margin: 0;
-    padding: 50px;
     background-image: linear-gradient(to left, #bbb012ce, #910c0c);
     color: white;
-}
-
-.row-content {
-    padding: 50px;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+    margin: 0;
+    padding: 2rem
 }
 
 .navbar {
-    padding: 0.6rem;
-    background-color: #131212
+    background-color: #131212;
+    padding: 0.6em
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5)
+#signupButton {
+    padding: 0.6em
+}
+
+.breadcrumb {
+    background-color:rgba(0, 0, 0, 0.85);
+    border-radius: 0
 }
 
 .carousel {
     border: solid #000000;
+}
+
+.carousel-content {
+    border-bottom: 2px ridge;
+    padding: 3rem
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .modal-header {
